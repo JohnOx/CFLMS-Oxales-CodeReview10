@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 18. Jul 2020 um 02:55
+-- Erstellungszeit: 18. Jul 2020 um 10:28
 -- Server-Version: 10.4.13-MariaDB
 -- PHP-Version: 7.4.7
 
@@ -57,8 +57,10 @@ INSERT INTO `all_media` (`all_isbn`, `all_media_type`, `all_title`, `all_publish
 (11, 'book', 'Git Pocket Guide', '2013-08-02', 'https://cdn.pixabay.com/photo/2014/03/26/22/47/volhoofd-299095_960_720.jpg', 'No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \"You Don’t Know JS\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the standard upon which JavaScript is built.', 'available', 'small', 'Harnessing', 'Medil paratu 789-56', 'Richard E.', 'Silverman'),
 (12, 'cd', 'Understanding ECMAScript 6', '2016-09-03', 'https://cdn.pixabay.com/photo/2017/11/30/02/59/binary-code-2987483_960_720.jpg', 'Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft’s ASP.NET Web API framework. In the process, you’ll learn how design and implement a real-world Web API.', 'reserved', 'big', 'Starch Press and Sons', 'Crown-str 555', 'Nicholas C.', 'Zakas'),
 (13, 'book', 'Robust Web Architecture with Node', '2020-01-01', 'https://cdn.pixabay.com/photo/2020/04/20/10/52/code-5067826_960_720.jpg', 'JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games.', 'reserved', 'big', 'Modern JS Libraries', 'Mock-up str 24', 'Axel', 'Elliott'),
-(14, 'dvd', 'Power to build robust web-scale', '2015-12-27', 'https://cdn.pixabay.com/photo/2020/04/14/19/13/infected-5043969_960_720.jpg', 'Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.', 'available', 'medium', 'English Pub', 'Block du prat 14563', 'John', 'Stockton'),
-(15, 'book', 'Mickey, Donald & Co.', '1950-03-09', 'https://cdn.pixabay.com/photo/2020/04/13/18/10/vape-5039608_960_720.jpg', 'This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.', 'available', 'small', 'Walt Disney', 'Holly Rd W 123', 'Walter', 'Herold');
+(14, 'dvd', 'Power to build robust web-scale', '2015-12-27', 'https://cdn.pixabay.com/photo/2020/04/14/19/13/infected-5043969_960_720.jpg', 'Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.', 'available', 'medium', 'Matrix AG', 'Block du prat 14563', 'John', 'Stockton'),
+(15, 'book', 'Mickey, Donald & Co.', '1950-03-09', 'https://cdn.pixabay.com/photo/2020/04/13/18/10/vape-5039608_960_720.jpg', 'This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.', 'available', 'small', 'Walt Disney', 'Holly Rd W 123', 'Walter', 'Herold'),
+(16, 'dvd', 'The Adventures of Huck Finn', '1880-05-03', NULL, NULL, 'available', NULL, 'Southwest Group', NULL, 'Mark', 'Twain'),
+(17, 'book', 'New Huck Adventures', '1881-06-07', NULL, NULL, 'available', NULL, 'Southwest Group', NULL, 'Mark', 'Twain');
 
 -- --------------------------------------------------------
 
@@ -139,7 +141,7 @@ ALTER TABLE `publisher`
 -- AUTO_INCREMENT für Tabelle `all_media`
 --
 ALTER TABLE `all_media`
-  MODIFY `all_isbn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `all_isbn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT für Tabelle `author`

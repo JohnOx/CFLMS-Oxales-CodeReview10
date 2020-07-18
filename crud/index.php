@@ -156,6 +156,22 @@
 
     </div><!--End of container-->
 
+
+
+
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <footer class="container fluid text-center text-danger">
     <h5>Code Factory - John Oxales 2020</h5>
 </footer>    

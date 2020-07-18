@@ -107,12 +107,23 @@
 
             <div class="form-group">
                 <label for="status">Status</label>
-                <input type="text" class="form-control" name="all_status" placeholder="available or reserved?" >
+                <!-- <input type="text" class="form-control" name="all_status" placeholder="available or reserved?" > -->
+                    <select class="custom-select" name="all_status" >
+                        <option selected>Availability:</option>
+                        <option value="1">reserved</option>
+                        <option value="2">available</option>  
+                    </select>
             </div>
 
             <div class="form-group">
-                <label for="status">Media Type</label>
-                <input type="text" class="form-control" name="all_media_type" placeholder="Book, CD, DVD,...?" >
+                <label for="mediaType">Media Type</label>
+                <!-- <input type="text" class="form-control" name="all_media_type" placeholder="Book, CD, DVD,...?" > -->
+                <select class="custom-select" name="all_media_type" >
+                        <option selected>Type of Media:</option>
+                        <option value="1">Book</option>
+                        <option value="2">CD</option>
+                        <option value="3">DVD</option>    
+                    </select>
             </div>
 
 

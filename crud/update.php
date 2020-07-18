@@ -123,13 +123,25 @@ if ($_GET['all_isbn']) {
 
                 <div class="form-group">
                     <label for="status">Status</label>
-                    <input type="text" class="form-control" name="all_status" placeholder="available or reserved?" value="<?php echo $data['all_status'] ?>"/>
+                    
+                        <select class="custom-select" name="all_status" value="<?php echo $data['all_status'] ?>" />
+                            <option selected>Availability:</option>
+                            <option value="1">reserved</option>
+                            <option value="2">available</option>  
+                        </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="status">Media Type</label>
-                    <input type="text" class="form-control" name="all_media_type" placeholder="Book, CD, DVD,...?" value="<?php echo $data['all_media_type'] ?>"/>
+                    <label for="mediaType">Media Type</label>
+                    
+                        <select class="custom-select" name="all_media_type" value="<?php echo $data['all_media_type'] ?>"/>
+                            <option selected>Type of Media:</option>
+                            <option value="1">Book</option>
+                            <option value="2">CD</option>
+                            <option value="3">DVD</option>    
+                        </select>
                 </div>
+                
 
                 <input type= "hidden" name= "all_isbn" value= "<?php echo $data['all_isbn']?>" />
 
@@ -142,6 +154,10 @@ if ($_GET['all_isbn']) {
     </div>
 
     </body>
+
+ 
+
+
 
 
 </html>
